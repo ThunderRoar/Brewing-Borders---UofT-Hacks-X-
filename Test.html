@@ -3,87 +3,63 @@
       <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
       <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     </head>
-
-
-
-    <head>
+    
+<head>
     <title>Brewing Borders</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
 
     /* Style the header */
     header {
-      background-color: #666;
+      background-color: #F5E5D6;
       padding: 30px;
       text-align: center;
       font-size: 35px;
-      color: white;
+      color: rgb(0, 0, 0);
     }
-    
-    /* Create two columns/boxes that floats next to each other */
-    nav {
-      float: left;
-      width: 100%;
-      background: #ccc;
-      padding: 20px;
+    longer-bottom-border {
+    border-bottom: 100px solid #000000;
     }
-    
-    /* Style the list inside the menu */
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    
-    article {
-      float: left;
-      padding: 20px;
-      width: 100%;
-      background-color: #f1f1f1;
-      
-    }
-    
-    
-    
-    
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
-      }
-    }
-    </style>
-    </head>
-    <body>
-    
-    <h1>Brewing Borders</h1>
-    <p>blah blah blah</p>
-    
-    <header>
-      <h2>Todays Beverage of Choice</h2>
-    </header>
-    
-    <section>
-      <nav>
-        <ul>
-          <li><a href="#">Olong</a></li>
-          <li><a href="#">Details</a></li>
-        </ul>
-      </nav>
-      
-      <article>
-        <h3>Olong</h3>
-        <img src="olong.jpg" alt="tea"
-        width=50% 
-        height=30% 
-        padding: 20px;
-        >
 
-        <p>This tea is cool</p>
-      </article>
-    </section>
-    
 
-    
+
+</style>
+
+
+<body>
+  <header>
+    <h1>How Do You Feel?</h1>
+  
+    <div>
+    <input type="search" id="site-search" name="q">  
+    <button>Spill the Tea</button>
+    </div>
+  </header>
+
+
+    <div>
+    <h2>Olong Tea</h2>
+    <img src="olong.jpg" alt="tea"
+    width=50% 
+    height=30% 
+    padding: 20px;
+    border-radius: 50%;
+    style="border: 60px solid #9AAE88";
+    class="longer-bottom-border"
+    />
+    </div>
+
+</body>
+
+
+
+
+
     </body>
 
 
@@ -91,8 +67,8 @@
     </py-config>
 
     <py-script> 
+    
 
-      print("hello world")
     </py-script>
   
   </body>
