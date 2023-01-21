@@ -1,1 +1,1 @@
-# Brewing Borders - UofT-Hacks-X
+# Brewing Borders - UofT Hacks X
