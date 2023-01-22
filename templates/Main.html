@@ -10,13 +10,16 @@
   </head>
   <style>
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'DM Serif Display';
+    /* background-image: url("bg.png"); */
   }
 
   body {
-    background-color: #F0F2DF;
+    /* background-color: #F0F2DF; */
+    background-image: url("bg.png");
   }
 
   .header_div {
@@ -55,7 +58,7 @@
   .card {
     background-color: #B6CBA2;
     margin: 1em;
-    height: 32.5em;
+    height: 35em;
     border-radius: 25px 25px 25px 25px;
   }
 
@@ -81,6 +84,7 @@
     font-size: 0.9em;
     text-align: left;
     color: #21412E;
+    line-height: 1.35em;
   }
 
   .card ul, li, ol {
@@ -91,6 +95,7 @@
     font-size: 0.95em;
     text-align: left;
     color: #21412E;
+    line-height: 1.35em;
     list-style-position: inside
   }
 
@@ -102,7 +107,33 @@
     width: 18em;
     height: 10em;
   }
+  
+  .footer {
+    background-color: #745D52;
+    height: 3em;
+    /* border-radius: 0px 0px 25px 25px; */
+    padding: 0px;
+    flex-direction: column;
+    display: flex;
+  }
 
+  .footer_text {
+    text-align: right;
+    padding: 1em;
+  }
+
+  .footer_text p {
+    color: #F8F9F4;
+  }
+
+  .footer_logo {
+    /* padding-top: 0.3em;
+    margin-left: 0.5em;
+    margin-right: auto; */
+    border-radius: 25px 25px 25px 25px;
+    width: 7em;
+    height: 7em;
+  }
   </style>
   <body>
     <div class="header_div">
@@ -115,7 +146,7 @@
     <div class="card">
       <h1>today's drink</h1>
       <div class="card_image">
-        <img src="https://www.coffeedesk.com/blog/wp-content/uploads/2020/05/organic-herbata-zaparzona-1920x1280.jpg" class="card_image" alt="tea"/>
+        <img src="https://www.coffeedesk.com/blog/wp-content/uploads/2020/05/organic-herbata-zaparzona-1920x1280.jpg" class="card_image" alt="background"/>
       </div>
       <h2>oolong tea</h2>
       <p>Oolong tea is a traditional Chinese tea made from the partially oxidized leaves of the Camellia sinensis plant.</p>
@@ -126,4 +157,12 @@
       </ul>
     </div>
   </body>
+  <div class="footer">
+    <div class="footer_logo">
+      <img src="logo_transparent.png" class="footer_logo" alt="logo">
+    </div>
+    <!-- <div class="footer_text"> -->
+      <!-- <p>Made by</p> -->
+    <!-- </div> -->
+  </div>
 </html>
