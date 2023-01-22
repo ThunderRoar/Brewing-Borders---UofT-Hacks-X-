@@ -18,3 +18,9 @@ def page2():
     return render_template("Page2.html", data = the_data)
 
 print(the_data)
+
+
+all_data = [ "https://www.coffeedesk.com/blog/wp-content/uploads/2020/05/organic-herbata-zaparzona-1920x1280.jpg",  "fuk no" , "hot",  "no" ,  "no" ,  "no", "https://www.coffeedesk.com/blog/wp-content/uploads/2020/05/organic-herbata-zaparzona-1920x1280.jpg"]
+@app.route("/new")
+def demo():
+    return render_template("Search.html", data = all_data )
