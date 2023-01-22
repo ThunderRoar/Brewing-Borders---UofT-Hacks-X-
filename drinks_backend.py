@@ -3,7 +3,7 @@ import csv
 import time
 import random
 import openai
-openai.api_key = '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'
+openai.api_key = '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'
 from concurrent.futures import ThreadPoolExecutor
 api_key = '4PguL5I35AkrSLLRhDNpfXRkX2YiVFDy7uJtQNeT'
 map_api = 'f64150a250e943538522123699ace796'
