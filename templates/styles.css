@@ -1,3 +1,5 @@
+@font-face { font-family: Cuprum; src: url('Cuprum-Regular.ttf'); }
+
 .header_div {
     background-color: #B6CBA2;
     height: 60px;
@@ -5,7 +7,9 @@
 }
 
 h1 {text-align: center;}
+
 p {text-align: center;}
+
 div {text-align: center;}
   /* Style the header */
   header {
@@ -15,20 +19,23 @@ div {text-align: center;}
     font-size: 35px;
     color: rgb(0, 0, 0);
   }
+
 img {
   border-radius: 120px 20px 120px 20px;    
 }
+
 div{
   background-color: #9AAE88;
   padding: 20px;
   text-align: center;
   font-size: 35px;
   color: rgb(0, 0, 0);
-}
-@font-face { font-family: Cuprum; src: url('Cuprum-Regular.ttf'); } 
+} 
+
 h1{
   font-family: Cuprum, sans-serif;
 }
+
 h2{
   font-family: Cuprum, sans-serif;
 }
