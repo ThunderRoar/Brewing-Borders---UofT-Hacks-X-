@@ -57,7 +57,7 @@
   .card {
     background-color: #B6CBA2;
     margin: 1em;
-    height: 45em;
+    height: 50em;
     border-radius: 25px 25px 25px 25px;
   }
 
@@ -106,7 +106,7 @@
     width: 18em;
     height: 10em;
   }
-  
+
   .footer {
     background-color: #745D52;
     height: 3em;
@@ -146,20 +146,21 @@
     <div class="card">
       <h1>recommendation</h1>
       <div class="card_image">
-        <img src="{{data[0]}}" class="card_image" alt="drink image"/>
+        <img src="{{data[6]}}" class="card_image" alt="drink image"/>
       </div>
-      <h2>{{data[1]}}</h2>
-      <p>{{data[2]}}</p>
+      <h2>{{data[0]}}</h2>
+      <p>{{data[8]}}</p>
       <h2>profile</h2>
       <ul>
-        <li>{{data[3]}}</li>
-        <li>{{data[4]}}</li>
-        <li>{{data[5]}}</li>
-        <li>{{data[6]}}</li>
+        <li>Caffeine: {{data[2]}}</li>
+        <li>Alcohol: {{data[3]}}</li>
+        <li>Carbonization: {{data[4]}}</li>
+        <li>Temperature: {{data[5]}}</li>
       </ul>
       <h2>origin</h2>
+      <p>{{data[1]}}</p>
       <div class="card_image">
-        <img src="{{map}}" class="card_image" alt="drink image"/>
+        <img src="{{data[7]}}" class="card_image" alt="drink image"/>
       </div>
     </div>
   </body>

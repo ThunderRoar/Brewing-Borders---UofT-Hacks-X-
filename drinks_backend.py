@@ -3,7 +3,7 @@ import csv
 import time
 import random
 import openai
-openai.api_key = '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'
+openai.api_key = 'sk-'
 from concurrent.futures import ThreadPoolExecutor
 api_key = '4PguL5I35AkrSLLRhDNpfXRkX2YiVFDy7uJtQNeT'
 map_api = 'f64150a250e943538522123699ace796'
@@ -105,7 +105,7 @@ def senti_analysis(str_to_analyse: str, file_name: str):
 def senti_analysis_with_thread(str_to_analyse, file_name):
     return senti_analysis(str_to_analyse, file_name)
 
-# returns a tuple in the form of (drink name, country, caffeine, alcohol, carbonation, temperature, link of img, description)
+# returns a tuple in the form of (drink name, country, caffeine, alcohol, carbonation, temperature, link to drink img, link of country img, description)
 def find_drink(caffeine, alcohol, carbonation, temperature):
     # in the event that no drink matches all four traits we keep subtracting traits until we find one that works
     # read the lines within the drinks file and turn it into a list of lists
@@ -130,7 +130,7 @@ def find_drink(caffeine, alcohol, carbonation, temperature):
     description = desc(reco_drinks[indice][0])
     country = map(reco_drinks[indice][0])
     # return the link to the image of the picture
-    return (reco_drinks[indice][0], reco_drinks[indice][1], reco_drinks[indice][2], reco_drinks[indice][3], reco_drinks[indice][4], reco_drinks[indice][5], country, description)
+    return (reco_drinks[indice][0], reco_drinks[indice][1], reco_drinks[indice][2], reco_drinks[indice][3], reco_drinks[indice][4], reco_drinks[indice][5], reco_drinks[indice][6], country, description)
 
 
 def classify(prompt):
