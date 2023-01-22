@@ -4,6 +4,7 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
     <!-- <link href="styles.css" type="text/css" rel="stylesheet" /> -->
     <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <title>Brewing Borders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -19,10 +20,10 @@
   }
 
   .header_div {
-      background-color: #B6CBA2;
-      height: 8em;
-      border-radius: 0px 0px 25px 25px;
-      padding: 0px;
+    background-color: #B6CBA2;
+    height: 8em;
+    border-radius: 0px 0px 25px 25px;
+    padding: 0px;
   }
 
   .header_div h1 {
@@ -50,6 +51,58 @@
     border:3px solid #F8F9F4;
     color: #2E503C;
   }
+
+  .card {
+    background-color: #B6CBA2;
+    margin: 1em;
+    height: 32.5em;
+    border-radius: 25px 25px 25px 25px;
+  }
+
+  .card h1 {
+    padding-top: 0.5em;
+    text-align: center;
+    color: #2E503C;
+  }
+
+  .card h2 {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+    color: #234531;
+  }
+
+  .card p {
+    padding-top: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Comfortaa';
+    font-size: 0.9em;
+    text-align: left;
+    color: #21412E;
+  }
+
+  .card ul, li, ol {
+    padding-top: 0.3em;
+    padding-left: .55em;
+    padding-right: .55em;
+    font-family: 'Comfortaa';
+    font-size: 0.95em;
+    text-align: left;
+    color: #21412E;
+    list-style-position: inside
+  }
+
+  .card_image {
+    padding-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px 25px 25px 25px;
+    width: 18em;
+    height: 10em;
+  }
+
   </style>
   <body>
     <div class="header_div">
@@ -59,14 +112,18 @@
         <button onclick="window.location.href = 'http://127.0.0.1:5000/page';" class="search_button">></button>
       </div>
     </div>
-      <div>
-      <h2>Today's Beverage</h2>
-      <img src="https://www.coffeedesk.com/blog/wp-content/uploads/2020/05/organic-herbata-zaparzona-1920x1280.jpg" alt="tea"
-        width=400px 
-        height=250px 
-        padding: 20px;
-        style="border: 0px solid #9AAE88";
-        />
+    <div class="card">
+      <h1>today's drink</h1>
+      <div class="card_image">
+        <img src="https://www.coffeedesk.com/blog/wp-content/uploads/2020/05/organic-herbata-zaparzona-1920x1280.jpg" class="card_image" alt="tea"/>
       </div>
+      <h2>oolong tea</h2>
+      <p>Oolong tea is a traditional Chinese tea made from the partially oxidized leaves of the Camellia sinensis plant.</p>
+      <h2>benefits</h2>
+      <ul>
+        <li>In addition to caffeine, oolong tea contains vitamins, minerals, amino acids, and beneficial tea polyphenol antioxidants.</li>
+        <li>Drinking up to 10 cups of oolong tea per day is generally considered to be safe for most people.</li>
+      </ul>
+    </div>
   </body>
 </html>
