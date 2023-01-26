@@ -1,4 +1,5 @@
 # Brewing Borders - UofT Hacks X
+![logo](images/brewing_borders.jpg)
 ## Inspiration
 We got a free bottle of oolong tea from UTSC and it was delicious. With the theme being exploration, we wanted to explore the different beverages around the world.
 
