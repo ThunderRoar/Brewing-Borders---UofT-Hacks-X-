@@ -25,8 +25,3 @@ We used Flask as our frontend to get the user's input. The input is given to co:
 ## What's next for Brewing Borders
 - Turn it into a progressive web app
 - Improve design of Flask frontend
-
-## Figma Design
-<img src="images/landing_page.png" height="500px">
-<!-- <img src="images/search_result.png" height="700px"> -->
-<img src="images/colour_palette.png" height="400px">
